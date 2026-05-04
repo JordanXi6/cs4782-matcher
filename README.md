@@ -33,28 +33,32 @@ Beyond the paper, our distributional analysis reveals:
 These findings reframe bidirectional matching as a tail-risk reducer / cycle-consistency outlier filter, not a uniform feature improvement.
 
 ## 3. GitHub Contents
-cs4782-matcher/
-├── README.md                # this file
-├── LICENSE                  # MIT
-├── .gitignore
-├── code/
-│   ├── matcher/             # patched Matcher Python module
-│   │   ├── Matcher.py       # contains DISABLE_REVERSE env-var gate
-│   │   ├── Matcher_SemanticSAM.py
-│   │   ├── PATCHES.md       # documents all modifications
-│   │   └── ...
-│   ├── notebooks/           # Colab notebooks for reproduction
-│   │   ├── 01_run_main.ipynb
-│   │   ├── 02_run_ablation.ipynb
-│   │   └── 03_analyze_results.ipynb
-│   └── requirements.txt
-├── data/README.md           # FSS-1000 download instructions
-├── results/
-│   ├── logs/                # raw stdout from main and ablation runs
-│   ├── tables/              # per-class CSV, summary statistics
-│   └── plots/               # mIoU comparison, per-class bar chart
-├── poster/matcher_poster.pdf
-└── report/group_matcher_2page_report.pdf
+
+    cs4782-matcher/
+    |-- README.md                  (this file)
+    |-- LICENSE                    (MIT)
+    |-- .gitignore
+    |-- code/
+    |   |-- matcher/               (patched Matcher Python module)
+    |   |   |-- Matcher.py         (contains DISABLE_REVERSE env-var gate)
+    |   |   |-- Matcher_SemanticSAM.py
+    |   |   |-- PATCHES.md         (documents all modifications)
+    |   |   `-- ...
+    |   |-- notebooks/             (Colab notebooks for reproduction)
+    |   |   |-- 01_run_main.ipynb
+    |   |   |-- 02_run_ablation.ipynb
+    |   |   `-- 03_analyze_results.ipynb
+    |   `-- requirements.txt
+    |-- data/
+    |   `-- README.md              (FSS-1000 download instructions)
+    |-- results/
+    |   |-- logs/                  (raw stdout from main and ablation runs)
+    |   |-- tables/                (per-class CSV, summary statistics)
+    |   `-- plots/                 (mIoU comparison, per-class bar chart)
+    |-- poster/
+    |   `-- matcher_poster.pdf
+    `-- report/
+        `-- group_matcher_2page_report.pdf
 
 ## 4. Re-implementation Details
 
@@ -84,11 +88,9 @@ Patches to upstream Matcher (see `code/matcher/PATCHES.md`):
 
 **1. Clone original Matcher and apply our patches:**
 
-```bash
-git clone https://github.com/aim-uofa/Matcher.git
-cd Matcher
-cp -r /path/to/cs4782-matcher/code/matcher/* matcher/
-```
+    git clone https://github.com/aim-uofa/Matcher.git
+    cd Matcher
+    cp -r /path/to/cs4782-matcher/code/matcher/* matcher/
 
 **2. Download model checkpoints:**
 
@@ -99,9 +101,7 @@ cp -r /path/to/cs4782-matcher/code/matcher/* matcher/
 
 **4. Install dependencies:**
 
-```bash
-pip install -r code/requirements.txt
-```
+    pip install -r code/requirements.txt
 
 ### Running
 
