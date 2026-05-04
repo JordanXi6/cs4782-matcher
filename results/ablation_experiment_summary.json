@@ -1,0 +1,10 @@
+{
+  "experiment": "ablation: forward-only matching (bidirectional disabled)",
+  "description": "Table 4b \"forward\" row: only forward matching, no reverse filtering",
+  "benchmark": "FSS-1000 fold 0",
+  "episodes": 2400,
+  "final_mIoU": 80.77,
+  "final_FB_IoU": 86.21,
+  "paper_reported_mIoU": 81.1,
+  "gpu": "L4"
+}

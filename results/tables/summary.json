@@ -1,0 +1,22 @@
+{
+  "benchmark": "FSS-1000 (fold 0: 20 test classes, 120 episodes per class)",
+  "hardware": "NVIDIA L4 GPU, Google Colab Pro",
+  "main_bidirectional": {
+    "mIoU_ours": 87.33,
+    "FB_IoU_ours": 91.73,
+    "mIoU_paper": 87.0,
+    "paper_reference": "Matcher paper Table 1 (all folds mean)",
+    "n_classes": 20
+  },
+  "ablation_forward_only": {
+    "mIoU_ours": 80.77,
+    "FB_IoU_ours": 86.21,
+    "mIoU_paper": 81.1,
+    "paper_reference": "Matcher paper Table 4b (\"forward\" row)",
+    "n_classes": 20
+  },
+  "bidirectional_contribution": {
+    "delta_ours": 6.560000000000002,
+    "delta_paper": 5.900000000000006
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "experiment": "main (with ILM, alpha=0.8, beta=0.2)",
+  "benchmark": "FSS-1000 fold 0",
+  "episodes": 2400,
+  "final_mIoU": 87.33,
+  "final_FB_IoU": 91.73,
+  "paper_reported_mIoU": 87.0,
+  "gpu": "L4"
+}

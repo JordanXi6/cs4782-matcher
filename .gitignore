@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Matcher project specific
+*.pth
+*.pt
+checkpoints/
+weights/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+drive/
+.DS_Store
+~$*
+results/intermediate/
+results/cache/
+results/raw_*/
+.env
+venv/
+.venv/
